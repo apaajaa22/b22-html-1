@@ -1,31 +1,85 @@
+html,
 body {
     margin: 0px 0px;
-    background-color: #10ac84;
+    background-color: #7cbb51;
 }
 
 h1 {
-    margin: 50px 0px;
     text-align: center;
     color: #222f3e;
+    color: antiquewhite;
 }
 
 .container {
-    border: 20px solid brown;
+    border: 25px solid brown;
     width: 400px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(8, 50px);
     grid-template-rows: repeat(8, 50px);
     border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.pawn span::before {
+    content: "\2659";
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    font-weight: bold;
+}
+.rook span::before {
+    content: "\2656";
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    font-weight: bold;
+}
+.knight span::before {
+    content: "\2658";
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    font-weight: bold;
+}
+.bishop span::before {
+    content: "\2657";
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    font-weight: bold;
+}
+.king span::before {
+    content: "\2655";
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    font-weight: bold;
+}
+.queen span::before {
+    content: "\2654";
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    display: grid;
+    justify-content: center;
+    font-weight: bold;
+}
 .white {
-    background-color: white;
+    background-color: rgb(202, 113, 113);
+    width: 100%;
+    padding-top: 7px;
 }
 .white:hover {
     background-color: blue;
 }
 
 .black {
-    background-color: black;
+    background-color: white;
+    width: 100%;
+    padding-top: 7px;
 }
